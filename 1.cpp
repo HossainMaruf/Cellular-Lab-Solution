@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 int main() {
-	int total_BW = 33e3, channel_BW = 25 * 2, possible_channel = total_BW / channel_BW;
+	int total_BW = 30e3, channel_BW = 25 * 2, possible_channel = total_BW / channel_BW;
 	int control_channel = 1e3 / channel_BW, voice_channel = possible_channel - control_channel;
 	std::cout << "Total channels = " << possible_channel << std::endl;
 	std::cout << "For N = 4, channels per cell = " << possible_channel / 4 << std::endl;
